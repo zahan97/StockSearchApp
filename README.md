@@ -1,7 +1,5 @@
 # StockSearchApp
 
-## Snapshots
-
 ### Home Screen & Stock Detail Screen
 <div>
 <img src="images/home.PNG" width="240" height="470" />
