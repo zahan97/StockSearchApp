@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/sectionTabColor"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="31dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/d_cname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="35dp"
+            android:paddingRight="80dp"
+            android:text="Trade Amazon.com Inc shares"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            android:textStyle="bold"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/num_shares"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:textColor="#838383"
+                android:paddingLeft="10dp"
+                android:backgroundTint="#838383"
+                android:inputType="numberDecimal"
+                android:textSize="30sp"></EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="shares"
+                android:textAlignment="textEnd"
+                android:textColor="@color/black"
+                android:textSize="20sp"></TextView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/dynamic_cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="35dp"
+            android:text="0x$3006.15/share = $0.00"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"></TextView>
+
+        <TextView
+            android:id="@+id/amt_available"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="$8291.27 available to buy AMZN"
+            android:textAlignment="center"
+            android:textStyle="bold"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buy_button"
+                android:layout_width="120dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/rounded_corners"
+                android:text="BUY"
+                android:textColor="@color/white"></Button>
+
+            <Button
+                android:id="@+id/sell_button"
+                android:layout_width="120dp"
+                android:layout_height="45dp"
+                android:background="@drawable/rounded_corners"
+                android:text="SELL"
+                android:textColor="@color/white"></Button>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
